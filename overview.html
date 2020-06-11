@@ -11,11 +11,13 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .why-this-course {
             float: left;
             background-color: white;
-            
+
 
             margin-left: 5px;
             margin-right: 5px;
@@ -47,16 +49,90 @@
         .button4 {
             border-radius: 15px;
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
-            
+
         }
 
         .why-this-course-items {
             column-count: 3;
         }
 
-        
+        html {
+            scroll-behavior: smooth;
+        }
 
-        
+        .social-media {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .fa-facebook:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-instagram:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-twitter:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-youtube:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-twitch:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Tooltip container */
+        .fa-facebook {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltiptext {
+            visibility: hidden;
+            /* background-color: green; */
+            color: black;
+            text-align: center;
+            padding: 2px 0;
+            border-radius: 6px;
+            width: 120px;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+            font-size: 10px;
+            margin-top: 10px;
+
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .fa-facebook:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-instagram:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-twitter:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-youtube:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-twitch:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
 
     <title>OverView</title>
@@ -113,12 +189,12 @@
     </nav>
 
     <!-- alert -->
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Enroll in this course to get closer to your sucess and stay safe at home </strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-    </div>
+    </div> -->
 
     <!-- starting image -->
     <div id="my-carousel" class="carousel slide my-2" data-ride="carousel">
@@ -129,8 +205,8 @@
                 <div class="carousel-caption ">
                     <h1 class="banner-text-size"
                         style="font-size:40px;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
-                        MY Headline here</h1>
-                    <button type="button" class="btn btn-primary">button</button>
+                        Machine Learning</h1>
+                    <button type="button" class="btn btn-success">Register now</button>
                 </div>
             </div>
         </div>
@@ -141,25 +217,31 @@
         <div class="container-fluid why-this-course">
             <hr>
             <h1 class="display-4">Why this course..</h1>
-            
-            <ul class="why-this-course-items">
+
+            <ul class="why-this-course-items" style="list-style: none;">
                 <li class="cl-1">
-                    <p><img src="images/certificate.png" width="30" height="30" alt=""><strong> Earn a Certificate</strong></p>
+                    <p><img src="images/certificate.png" width="30" height="30" alt=""><strong> Earn a
+                            Certificate</strong><br>Complete the machine learning virtual experience and earn a
+                        personalized completion certificate </p>
                 </li>
                 <li class="cl-1">
                     <p><img src="images/favorite.png" width="30" height="30" alt=""><strong> Prioritize your
-                            Application</strong></p>
+                            Application</strong><br>Your application will be prioritized for review when you apply at
+                        Techtable</p>
                 </li>
                 <li class="cl-2">
                     <p><img src="images/portfolio.png" width="30" height="30" alt=""><strong> Shortlist for exclusive
-                            Oppurtunities</strong></p>
+                            Oppurtunities</strong><br>BrainEvolve will reach out with opportunities for networking
+                        events, mentoring programs and stacks.</p>
                 </li>
                 <li class="cl-2">
-                    <p><img src="images/timer.png" width="30" height="30" alt=""><strong> Do it in your own time</strong></p>
+                    <p><img src="images/timer.png" width="30" height="30" alt=""><strong> Do it in your own
+                            time</strong><br>Learn at your own pace and reach your personal goals.</p>
                 </li>
                 <li class="cl-2">
-                    <p><img src="images/resume.png" width="30" height="30" alt=""><strong> Make your CV and LinkedIn stand
-                            out</strong></p>
+                    <p><img src="images/resume.png" width="30" height="30" alt=""><strong> Make your CV and LinkedIn
+                            stand
+                            out</strong><br>Include this experience on your CV and LinkedIn profile.</p>
                 </li>
             </ul>
             <hr>
@@ -182,23 +264,28 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                             data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Collapsible Group Item #1
+                            1. Introduction
                         </button>
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                     data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard
-                        of them accusamus labore sustainable VHS.
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 1
+
                     </div>
                 </div>
             </div>
@@ -207,21 +294,25 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Collapsible Group Item #2
+                            2. Supervised Learning
                         </button>
                     </h2>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard
-                        of them accusamus labore sustainable VHS.
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 2
                     </div>
                 </div>
             </div>
@@ -230,24 +321,83 @@
                     <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Collapsible Group Item #3
+                            3. Unsupervised Learning
                         </button>
                     </h2>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                        squid.
-                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                        laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                        coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-                        anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-                        occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-                        heard
-                        of them accusamus labore sustainable VHS.
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 3
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. Fine Tuning models
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 4
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5. Additional contents
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 5
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -256,11 +406,26 @@
         <img src="https://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg" class="card-img-top" alt="laptop">
         <div class="card-body">
             <h5 class="card-title">Course preview</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
+            <p class="card-text"><span style="color: rgb(19, 175, 175);">This course includes</span><br>
+                12 hours on-demand videos.<br>
+                Full lifetime access.<br>
+                24 hr support.</p>
             <a href="#" class="btn btn-primary">Enroll now</a>
         </div>
     </div>
+
+    <!-- pre-requisites and requirements -->
+    <div class="container description">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);">Pre-requisites and Requirements</h3>
+        <hr>
+        <ul>
+            <li>Basic understaniding of mathematics</li>
+            <li>Basic knowlege of Python</li>
+            <li>Laptop with Python environment</li>
+        </ul>
+    </div>
+
 
 
     <!-- description -->
@@ -292,6 +457,24 @@
             </li>
         </ol>
 
+    </div>
+
+    <!-- Know your Teacher -->
+    <div class="container know-your-teacher col-md-8">
+        <h3 style=" color: rgb(19, 175, 175);">Know your teacher</h3>
+        <hr>
+        <div style="background-color: rgb(218, 214, 214);">
+            <h4 class="display-4 mx-4">Hello Students</h4>
+            <p class="lead mx-4">I'm Sonu Sharma ,BTech student and in this course you will learn about basic concepts
+                of
+                machine learning and take a step towards your success</p>
+
+            <p class='mx-4'>It uses utility classes for typography and spacing to space content out within the larger
+                container.</p>
+            <a class="btn btn-primary btn-md mx-4" href="#" role="button">Learn more</a>
+            <hr>
+            <p></p>
+        </div>
     </div>
 
     <!-- other courses -->
@@ -367,6 +550,30 @@
         <div>
             <h3 style=" color: rgb(19, 175, 175);">FAQ</h3>
             <hr>
+            <h5>Q : Do we need high end pc for ML ? </h5>
+            <p>A : NO</p>
+        </div>
+
+
+        <!-- footer -->
+        <br>
+        <div >
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+            </footer>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">facebook</span></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">instagram</span></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitter</span></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">youtube</span></i></a>
+                <a href="https://twitch.com" target="_blank"><i class="fa fa-twitch">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitch</span></i></a>
+            </div>
         </div>
 
 
