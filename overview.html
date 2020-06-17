@@ -61,8 +61,28 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                    placeholder="Search" aria-label="Search" autocomplete="off">
+                <br>
+                <div class="results">
+                    <!-- ordered list -->
+                    <ul style="list-style: none;">
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
+                    </ul>
+                </div>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="button" onclick="changeimg(this)">Login</button>
+            
             </form>
         </div>
     </nav>
@@ -324,23 +344,26 @@
 
             This course is fun and exciting, but at the same time we dive deep into Machine Learning. It is structured
             the following way:
-            <ul>
+        <ul>
             <li>Part 1 - Data Preprocessing</li>
-            <li>Part 2 - Regression: Simple Linear Regression, Multiple Linear Regression, Polynomial Regression, SVR,Decision Tree Regression, Random Forest Regression</li>
-            <li>Part 3 - Classification: Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision Tree,Classification, Random Forest Classification</li>
+            <li>Part 2 - Regression: Simple Linear Regression, Multiple Linear Regression, Polynomial Regression,
+                SVR,Decision Tree Regression, Random Forest Regression</li>
+            <li>Part 3 - Classification: Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision
+                Tree,Classification, Random Forest Classification</li>
             <li>Part 4 - Clustering: K-Means, Hierarchical Clustering</li>
             <li>Part 5 - Association Rule Learning: Apriori, Eclat</li>
             <li>Part 6 - Reinforcement Learning: Upper Confidence Bound, Thompson Sampling</li>
             <li>Part 7 - Natural Language Processing: Bag-of-words model and algorithms for NLP</li>
             <li>Part 8 - Deep Learning: Artificial Neural Networks, Convolutional Neural Networks</li>
             <li>Part 9 - Dimensionality Reduction: PCA, LDA, Kernel PCA</li>
-            <li>Part 10 - Model Selection & Boosting: k-fold Cross Validation, Parameter Tuning, Grid Search, XGBoost</li>
-            </ul>
-            Moreover, the course is packed with practical exercises which are based on real-life examples. So not only
-            will you learn the theory, but you will also get some hands-on practice building your own models.
+            <li>Part 10 - Model Selection & Boosting: k-fold Cross Validation, Parameter Tuning, Grid Search, XGBoost
+            </li>
+        </ul>
+        Moreover, the course is packed with practical exercises which are based on real-life examples. So not only
+        will you learn the theory, but you will also get some hands-on practice building your own models.
 
-            And as a bonus, this course includes both Python and R code templates which you can download and use on your
-            own projects.
+        And as a bonus, this course includes both Python and R code templates which you can download and use on your
+        own projects.
         </p>
 
     </div>
@@ -381,8 +404,9 @@
                         <p class="card-text">Create apps you always use on your smartphone</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="android_ov.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="android_ov.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -402,8 +426,9 @@
                         <p class="card-text">Create your own website and start your blog</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="webd.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="webd.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -423,8 +448,9 @@
                         <p class="card-text">Secure your system by learning some great hacking techniques</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="ethical_1.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="ethical_1.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -463,7 +489,8 @@
             </div>
         </div>
 
-
+        <!-- linking javscript -->
+        <script src="static/searchbar.js"></script>
 
 
         <!-- Optional JavaScript -->

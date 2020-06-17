@@ -16,7 +16,7 @@ function search_animal() {
      
     
 
-    for (i = 0; i < x.length; i++) {  
+    for (i = 0; i < y.length; i++) {  
         if (!x[i].includes(input)) { 
             y[i].style.display="none"; 
         } 
@@ -24,7 +24,7 @@ function search_animal() {
             
             div.style.display = "inline";
             y[i].style.display="list-item"; 
-            y[i].textContent = x[i];                 
+            // y[i].textContent = x[i];                 
         } 
     } 
 
@@ -35,3 +35,14 @@ function search_animal() {
         }
     }
 } 
+
+function changeimg(thi){
+    
+    
+    thi.setAttribute("src", "images/user.png");
+    thi.style.width='50px';
+    thi.style.height='40px';
+    thi.style.float="right";
+    thi.innerHTML = "";
+    thi.outerHTML = thi.outerHTML.replace(/button/g, "img");
+}

@@ -17,6 +17,7 @@
     <style>
         .results {
             position: fixed;
+            min-width: 200px;
             top: 8%;
             background-color: gray;
             border: 1px solid black;
@@ -82,20 +83,23 @@
                 <div class="results">
                     <!-- ordered list -->
                     <ul style="list-style: none;">
-                        <li class="animals">Cat</li>
-                        <li class="animals">Dog</li>
-                        <li class="animals">Elephant</li>
-                        <li class="animals">Fish</li>
-                        <li class="animals">Gorilla</li>
-                        <li class="animals">Monkey</li>
-                        <li class="animals">Turtle</li>
-                        <li class="animals">Whale</li>
-                        <li class="animals">Aligator</li>
-                        <li class="animals">Donkey</li>
-                        <li class="animals">Horse</li>
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
                     </ul>
                 </div>
+
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="button" onclick="changeimg(this)">Login</button>
+            
             </form>
         </div>
     </nav>
