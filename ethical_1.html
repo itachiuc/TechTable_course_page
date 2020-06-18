@@ -61,8 +61,28 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                    placeholder="Search" aria-label="Search" autocomplete="off">
+                <br>
+                <div class="results">
+                    <!-- ordered list -->
+                    <ul style="list-style: none;">
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
+                    </ul>
+                </div>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="button" onclick="changeimg(this)">Login</button>
+            
             </form>
         </div>
     </nav>
@@ -112,8 +132,8 @@
                             Application</strong><br>Your application will be prioritized for review when you apply at
                         Techtable</p>
                 </li>
-                
-                
+
+
                 <li class="cl-2">
                     <p><img src="images/resume.png" width="30" height="30" alt=""><strong> Make your CV and LinkedIn
                             stand
@@ -150,8 +170,7 @@
                     </h2>
                 </div>
 
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                    data-parent="#accordionExample">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                         Intro to Machine Learning
                         <hr>
@@ -376,8 +395,9 @@
                         <p class="card-text">Create apps you always use on your smartphone</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="android_ov.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="android_ov.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -396,8 +416,9 @@
                         <p class="card-text">Learn the future of learning and how to use it </p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="overview.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="overview.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -417,8 +438,9 @@
                         <p class="card-text">Create your own website and start your blog</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="webd.html"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                                
+                                <a href="webd.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
                             </div>
                             <!-- <small class="text-muted">1 week</small> -->
                         </div>
@@ -438,7 +460,7 @@
 
         <!-- footer -->
         <br>
-        <div >
+        <div>
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
                 <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
@@ -457,7 +479,8 @@
             </div>
         </div>
 
-
+        <!-- linking javscript -->
+        <script src="static/searchbar.js"></script>
 
 
         <!-- Optional JavaScript -->

@@ -29,7 +29,27 @@
             float: right;
         }
 
+        .results {
+            position: fixed;
+            min-width: 200px;
+            top: 8%;
+            background-color:white;
+            border: 1px solid black;
+            z-index: 50;
+            display: none;
 
+        }
+
+        #searchbar {
+            position: relative;
+
+            overflow: auto;
+            width: 50%;
+        }
+
+        .animals {
+            text-align: left;
+        }
 
         .button4 {
             border-radius: 15px;
