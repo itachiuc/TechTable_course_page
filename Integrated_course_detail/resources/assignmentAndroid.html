@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .why-this-course {
+            float: left;
+            background-color: white;
+
+
+            margin-left: 5px;
+            margin-right: 5px;
+            height: auto;
+
+
+        }
+
+        .col-md-3:hover {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .col-3:hover {
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px);
+        }
+
+        .container {
+            float: left;
+        }
+
+        .preview {
+            float: right;
+        }
+
+
+
+        .button4 {
+            border-radius: 15px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+        }
+
+        .why-this-course-items {
+            column-count: 3;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .social-media {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .fa-facebook:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-instagram:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-twitter:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-youtube:hover {
+            transform: translateY(-5px);
+        }
+
+        .fa-twitch:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Tooltip container */
+        .fa-facebook {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltiptext {
+            visibility: hidden;
+            /* background-color: green; */
+            color: black;
+            text-align: center;
+            padding: 2px 0;
+            border-radius: 6px;
+            width: 120px;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+            font-size: 10px;
+            margin-top: 10px;
+
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .fa-facebook:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-instagram:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-twitter:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-youtube:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .fa-twitch:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+
+<link rel="stylesheet" type="text/css" href="../static/overview.css">
+
+<title>OverView</title>
+</head>
+
+<body>
+
+<!-- navbar -->
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../Main Page/index.html">
+        <img src="../images/study.png" width="30" height="30" class="d-inline-block align-top" alt=""
+            loading="lazy">
+        BrainEvolve
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../Main Page/index.html">Home <span class="sr-only">(current)</span></a>
+
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">ALL</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Technical</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                placeholder="Search" aria-label="Search" autocomplete="off">
+            <br>
+            <div class="results">
+                <!-- ordered list -->
+                <ul style="list-style: none;">
+                    <li class="animals"><a href="../overviews/overview.html">machine learning</a></li>
+                    <li class="animals"><a href="../overviews/android_ov.html">android</a></li>
+                    <li class="animals"><a href="#">kotlin</a></li>
+                    <li class="animals"><a href="#">flutter</a></li>
+                    <li class="animals"><a href="#">java</a></li>
+                    <li class="animals"><a href="#">javaScript</a></li>
+                    <li class="animals"><a href="#">python</a></li>
+                    <li class="animals"><a href="#">artificial intelligence</a></li>
+                    <li class="animals"><a href="../overviews/ethical_1.html">ethical hacking</a></li>
+                    <li class="animals"><a href="#">c</a></li>
+                    <li class="animals"><a href="../overviews/webd.html">web developements</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="mx-2"><img src="../images/user.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></button>
+
+
+        </form>
+    </div>
+</nav>
+
+
+    <div id="my-carousel" class="carousel slide my-2" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/05/Desktop-Android-HD-Wallpapers-Images-Download.jpg"
+                    class="d-block w-100" alt="head_img" width="1300" height="500">
+                <div class="carousel-caption ">
+                    <h1 class="banner-text-size"
+                        style="font-size:40px;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                        Android</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="container col-md-12 col-lg-12" style="padding: 70px 0;">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Resources</h3>
+        <hr>
+        <!-- collapse -->
+        <div class="accordion " id="accordionExample" style="display:flex; ">
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingTwo">
+                    <h2 class="mb-0">
+                        <a href="book_pdfAndroid.html" style="text-decoration: none;">Download Book</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingThree">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="video_lecturesAndroid.html" style="text-decoration: none;">video lectures</a>
+                        </h2>
+                    </h2>
+                </div>
+
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFour">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="notesAndroid.html" style="text-decoration: none;">Download Notes</a>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+                </div>
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFive">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="assignmentAndroid.html" style="text-decoration: none;">Assignment</a>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- course content -->
+    <div class="container col-md-8" style="padding: 70px 0;">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Assignment</h3>
+        <hr>
+        <!-- collapse -->
+        <div class="accordion " id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-success" class="col-md-3"
+                            style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                        <button class="btn btn-warning" class="col-md-3"
+                            style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                        </h2>
+                    </h2>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- other courses -->
+    <div class="container">
+        <h3 style=" color: rgb(19, 175, 175);">Other Related Courses</h3>
+        <hr>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="https://www.onespan.com/sites/default/files/styles/blog_detail_image/public/2019-03/hacking.jpg?itok=gjwjglF9"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Ethical Hacking(Python)</h3>
+                        <p class="card-text">Secure your system by learning some great hacking techniques</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="../overviews/ethical_1.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Web Development</h3>
+                        <p class="card-text">Create your own website and start your blog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="../overviews/webd.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/deRfJz68gEUQ2VayR4DCyF-1200-80.jpg"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Machine Learning (Python/R)</h3>
+                        <p class="card-text">Learn the future of learning and how to use it </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="../overviews/overview.html"> <button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+
+        <!-- footer -->
+        <br>
+        <div>
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+            </footer>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">facebook</span></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">instagram</span></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitter</span></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">youtube</span></i></a>
+                <a href="https://twitch.com" target="_blank"><i class="fa fa-twitch">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitch</span></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+         <!-- linking javscript -->
+    <script src="../static/searchbar.js"></script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/overview.css">
+
+    <title>OverView</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../Main Page/index.html">
+            <img src="../images/study.png" width="30" height="30" class="d-inline-block align-top" alt=""
+                loading="lazy">
+            BrainEvolve
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Main Page/index.html">Home <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">ALL</a>
+                        <a class="dropdown-item" href="#">Management</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Technical</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                    placeholder="Search" aria-label="Search" autocomplete="off">
+                <br>
+                <div class="results">
+                    <!-- ordered list -->
+                    <ul style="list-style: none;">
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <a href="../login/index.html"><button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1"
+                        type="button" onclick="changeimg(this)">Login</button></a>
+
+            </form>
+        </div>
+    </nav>
+
+    <!-- alert -->
+    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Enroll in this course to get closer to your sucess and stay safe at home </strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div> -->
+
+    <!-- starting image -->
+    <div id="my-carousel" class="carousel slide my-2" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.squarespace-cdn.com/content/v1/53528f90e4b0768cad09d33b/1541186576265-RWK67UCDI04WXSJR5GQO/ke17ZwdGBToddI8pDm48kLHJ70-JWA9dgEOAbI336f17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4XabXLlNWpcJMv7FrN_NK7gC7ng9OtoO5ep7zCz0n67pPMXhJpSCNtoO-H2bRokQ/Artificial_intelligence.jpeg?format=1500w"
+                    class="d-block w-100" alt="head_img" width="1400" height="500">
+                <div class="carousel-caption ">
+                    <h1 class="banner-text-size"
+                        style="font-size:40px;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
+                        Machine Learning</h1>
+                    <a href="../resources/video_lectures.html"><button type="button" class="btn btn-success">Register
+                            now</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jumbotron -->
+    <div>
+        <div class="container-fluid why-this-course">
+            <hr>
+            <h1 class="display-4">Why this course..</h1>
+            <br>
+            <ul class="why-this-course-items" style="list-style: none;">
+                <li class="cl-1">
+                    <p><img src="../images/certificate.png" width="30" height="30" alt=""><strong> Earn a
+                            Certificate</strong><br>Complete the machine learning virtual experience and earn a
+                        personalized completion certificate </p>
+                </li>
+                <li class="cl-2">
+                    <p><img src="../images/timer.png" width="30" height="30" alt=""><strong> Do it in your own
+                            time</strong><br>Learn at your own pace and reach your personal goals.</p>
+                </li>
+                <li class="cl-1">
+                    <p><img src="../images/favorite.png" width="30" height="30" alt=""><strong> Prioritize your
+                            Application</strong><br>Your application will be prioritized for review when you apply at
+                        Techtable</p>
+                </li>
+
+
+                <li class="cl-2">
+                    <p><img src="../images/resume.png" width="30" height="30" alt=""><strong> Make your CV and LinkedIn
+                            stand
+                            out</strong><br>Include this experience on your CV and LinkedIn profile.</p>
+                </li>
+                <li class="cl-2">
+                    <p><img src="../images/portfolio.png" width="30" height="30" alt=""><strong> Shortlist for exclusive
+                            Oppurtunities</strong><br>BrainEvolve will reach out with opportunities for networking
+                        events, mentoring programs and stacks.</p>
+                </li>
+            </ul>
+            <hr>
+
+        </div>
+    </div>
+    <!-- <div class="container col-md-3 col-sm-0"></div> -->
+
+
+
+    <!-- course content -->
+    <div class="container col-md-8">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);">Course Contents</h3>
+        <hr>
+        <!-- collapse -->
+        <div class="accordion " id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. Introduction
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 1
+
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. Supervised Learning
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 2
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. Unsupervised Learning
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 3
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. Fine Tuning models
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 4
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5. Additional contents
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        Intro to Machine Learning
+                        <hr>
+                        Setting up the environment
+                        <hr>
+                        End of chapter 5
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- card beside jumbotron -->
+    <div class="card preview col-md-3 my-5">
+        <img src="https://cdn.mos.cms.futurecdn.net/6t8Zh249QiFmVnkQdCCtHK.jpg" class="card-img-top" alt="laptop">
+        <div class="card-body">
+            <h5 class="card-title">Course preview</h5>
+            <p class="card-text"><span style="color: rgb(19, 175, 175);">This course includes</span><br>
+                12 hours on-demand videos.<br>
+                Full lifetime access.<br>
+                24 hr support.</p>
+            <a href="#" class="btn btn-primary">Enroll now</a>
+        </div>
+    </div>
+
+    <!-- pre-requisites and requirements -->
+    <div class="container description">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);">Pre-requisites and Requirements</h3>
+        <hr>
+        <ul>
+            <li>Basic understaniding of mathematics</li>
+            <li>Basic knowlege of Python</li>
+            <li>Laptop with Python environment</li>
+        </ul>
+    </div>
+
+
+
+    <!-- description -->
+    <div class="container description">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);">Description</h3>
+        <hr>
+        <p>
+            Interested in the field of Machine Learning? Then this course is for you!
+
+            This course has been designed by two professional Data Scientists so that we can share our knowledge and
+            help you learn complex theory, algorithms and coding libraries in a simple way.
+
+            We will walk you step-by-step into the World of Machine Learning. With every tutorial you will develop new
+            skills and improve your understanding of this challenging yet lucrative sub-field of Data Science.
+
+            This course is fun and exciting, but at the same time we dive deep into Machine Learning. It is structured
+            the following way:
+        <ul>
+            <li>Part 1 - Data Preprocessing</li>
+            <li>Part 2 - Regression: Simple Linear Regression, Multiple Linear Regression, Polynomial Regression,
+                SVR,Decision Tree Regression, Random Forest Regression</li>
+            <li>Part 3 - Classification: Logistic Regression, K-NN, SVM, Kernel SVM, Naive Bayes, Decision
+                Tree,Classification, Random Forest Classification</li>
+            <li>Part 4 - Clustering: K-Means, Hierarchical Clustering</li>
+            <li>Part 5 - Association Rule Learning: Apriori, Eclat</li>
+            <li>Part 6 - Reinforcement Learning: Upper Confidence Bound, Thompson Sampling</li>
+            <li>Part 7 - Natural Language Processing: Bag-of-words model and algorithms for NLP</li>
+            <li>Part 8 - Deep Learning: Artificial Neural Networks, Convolutional Neural Networks</li>
+            <li>Part 9 - Dimensionality Reduction: PCA, LDA, Kernel PCA</li>
+            <li>Part 10 - Model Selection & Boosting: k-fold Cross Validation, Parameter Tuning, Grid Search, XGBoost
+            </li>
+        </ul>
+        Moreover, the course is packed with practical exercises which are based on real-life examples. So not only
+        will you learn the theory, but you will also get some hands-on practice building your own models.
+
+        And as a bonus, this course includes both Python and R code templates which you can download and use on your
+        own projects.
+        </p>
+
+    </div>
+
+    <!-- Know your Teacher -->
+    <div class="container know-your-teacher col-md-8">
+        <h3 style=" color: rgb(19, 175, 175);">Know your teacher</h3>
+        <hr>
+        <div style="background-color: rgb(218, 214, 214);">
+            <h4 class="display-4 mx-4">Hello Students</h4>
+            <p class="lead mx-4">I'm Sonu Sharma ,BTech student and in this course you will learn about basic concepts
+                of
+                machine learning and take a step towards your success</p>
+
+            <p class='mx-4'>It uses utility classes for typography and spacing to space content out within the larger
+                container.</p>
+            <a class="btn btn-primary btn-md mx-4" href="#" role="button">Learn more</a>
+            <hr>
+            <p></p>
+        </div>
+    </div>
+
+    <!-- other courses -->
+    <div class="container">
+        <h3 style=" color: rgb(19, 175, 175);">Other Related Courses</h3>
+        <hr>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="https://cnet1.cbsistatic.com/img/GJECnG_5VZ76P7Fno8E0_AZuQ_c=/940x0/2020/04/22/0ab4ce47-015f-48b7-9d73-0d130033d1c3/galaxy-s20-samsung.jpg"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Android Development with Kotlin</h3>
+                        <p class="card-text">Create apps you always use on your smartphone</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="android_ov.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Web Development</h3>
+                        <p class="card-text">Create your own website and start your blog</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="webd.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                        src="https://www.onespan.com/sites/default/files/styles/blog_detail_image/public/2019-03/hacking.jpg?itok=gjwjglF9"
+                        alt="">
+                    <title>Placeholder</title>
+
+                    <div class="card-body">
+                        <h3 class="card-text">Ethical Hacking(Python)</h3>
+                        <p class="card-text">Secure your system by learning some great hacking techniques</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="ethical_1.html"><button type="button"
+                                        class="btn btn-sm btn-outline-secondary">View</button></a>
+
+                            </div>
+                            <!-- <small class="text-muted">1 week</small> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div>
+            <h3 style=" color: rgb(19, 175, 175);">FAQ</h3>
+            <hr>
+            <h5>Q : Do we need high end pc for ML ? </h5>
+            <p>A : NO</p>
+        </div>
+
+
+        <!-- footer -->
+        <br>
+        <div>
+            <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
+            </footer>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">facebook</span></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">instagram</span></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitter</span></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">youtube</span></i></a>
+                <a href="https://twitch.com" target="_blank"><i class="fa fa-twitch">&nbsp;&nbsp;<span
+                            class="tooltiptext" style="color: black;">twitch</span></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- linking javscript -->
+    <script src="../static/searchbar.js"></script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
