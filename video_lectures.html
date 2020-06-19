@@ -46,10 +46,7 @@
 
 
 
-        .button4 {
-
-           
-        }
+        .button4 {}
 
         .why-this-course-items {
             column-count: 3;
@@ -134,11 +131,14 @@
         }
     </style>
 
+    <link rel="stylesheet" type="text/css" href="static/overview.css">
+
     <title>OverView</title>
 </head>
 
 <body>
 
+    <!-- navbar -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -153,8 +153,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span
-                                class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 
                 </li>
                 <li class="nav-item mx-1">
@@ -165,7 +164,7 @@
                     <a class="nav-link" href="#">Contact us</a>
                 </li>
                 <li class="nav-item mx-1">
-                   <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -181,13 +180,34 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                    placeholder="Search" aria-label="Search" autocomplete="off">
+                <br>
+                <div class="results">
+                    <!-- ordered list -->
+                    <ul style="list-style: none;">
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
+                    </ul>
+                </div>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="button"
+                    onclick="changeimg(this)">Login</button>
+
             </form>
         </div>
     </nav>
 
-  
+
     <div id="my-carousel" class="carousel slide my-2" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -202,106 +222,160 @@
         </div>
     </div>
     <!-- course content -->
+    <div class="container col-md-12 col-lg-12" style="padding: 70px 0;">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Resources</h3>
+        <hr>
+        <!-- collapse -->
+        <div class="accordion " id="accordionExample" style="display:flex; ">
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingTwo">
+                    <h2 class="mb-0">
+                        <a href="book_pdf.html" style="text-decoration: none;">Download Book</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingThree">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="video_lectures.html" style="text-decoration: none;">video lectures</a>
+                        </h2>
+                    </h2>
+                </div>
+
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFour">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="notes.html" style="text-decoration: none;">Download Notes</a>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+                </div>
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFive">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="assignment.html" style="text-decoration: none;">Assignment</a>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="accordion " id="accordionExample" style="">
-      <h3 style=" color: rgb(19, 175, 175);" align="center">Video Lectures</h3>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Video Lectures</h3>
 
 
-      <div class="card">
-          <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
-                  <div>
-                    <iframe width="400" height="250"
-                    src="https://www.youtube.com/embed/k2P_pHQDlp0">
-                    </iframe>
-                </div>
-                  <div style="">
-                    <p style="margin-left:5px;">
-                      <font style="font-size: large; font-family:Tahoma; ">
-                        Prerequisites: <br> he reader must have basic knowledge of 
-                      artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy, Matplotlib. If you are new to any of these 
-                      concepts, we recommend you to take up tutorials
-                       concerning these topics, before you dig further into this tutoria
-                      </font>
-                    </p>
-                  </div>
-              </h2>
-              </h2>
-          </div>
-          
-      </div>
-
-     <div class="card">
-          <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
-                  <div>
-                    <iframe width="400" height="250"
-                    src="https://www.youtube.com/embed/ukzFI9rgwfU">
-                    </iframe>
-                </div>
-                  <div style="">
-                    <p style="margin-left:5px;">
-                      <font style="font-size: large; font-family:Tahoma; ">
-                        Machine Learning with Python Tutorial: <br>Machine Learning (ML) is basically that field of computer
-                         science with the help of which computer systems can provide sense to data in much the same way as human
-                          beings do. In simple words, ML is a type of 
-                        artificial intelligence that extract patterns out of raw data by using an algorithm or method.
-                      </font>
-                    </p>
-                  </div>
-              </h2>
-              </h2>
-          </div>
-          
-      </div>
-     <div class="card">
-        <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
+        <div class="card">
+            <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
                 <div>
-                    <iframe width="400" height="250"
-                    src="https://www.youtube.com/embed/hjh1ikznScg">
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/k2P_pHQDlp0">
                     </iframe>
                 </div>
                 <div style="">
-                  <p style="margin-left:5px;">
-                    <font style="font-size: large; font-family:Tahoma; ">
-                      Audience: <br> he reader must have basic knowledge of 
-                    artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy, Matplotlib. If you are new to any of these 
-                    concepts, we recommend you to take up tutorials
-                     concerning these topics, before you dig further into this tutoria
-                    </font>
-                  </p>
+                    <p style="margin-left:5px;">
+                        <font style="font-size: large; font-family:Tahoma; ">
+                            Prerequisites: <br> he reader must have basic knowledge of
+                            artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy,
+                            Matplotlib. If you are new to any of these
+                            concepts, we recommend you to take up tutorials
+                            concerning these topics, before you dig further into this tutoria
+                        </font>
+                    </p>
                 </div>
-            </h2>
-            </h2>
+                </h2>
+                </h2>
+            </div>
+
         </div>
-        
-    </div>
-    <div class="card">
-        <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
+
+        <div class="card">
+            <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
                 <div>
-                  <iframe width="400" height="250"
-                  src="https://www.youtube.com/embed/4dwsSz_fNSQ">
-                  </iframe>
-              </div>
-                <div style="">
-                  <p style="margin-left:5px;">
-                    <font style="font-size: large; font-family:Tahoma; ">
-                      Machine Learning with Python Tutorial: <br>Machine Learning (ML) is basically that field of computer
-                       science with the help of which computer systems can provide sense to data in much the same way as human
-                        beings do. In simple words, ML is a type of 
-                      artificial intelligence that extract patterns out of raw data by using an algorithm or method.
-                    </font>
-                  </p>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/ukzFI9rgwfU">
+                    </iframe>
                 </div>
-            </h2>
-            </h2>
+                <div style="">
+                    <p style="margin-left:5px;">
+                        <font style="font-size: large; font-family:Tahoma; ">
+                            Machine Learning with Python Tutorial: <br>Machine Learning (ML) is basically that field of
+                            computer
+                            science with the help of which computer systems can provide sense to data in much the same
+                            way as human
+                            beings do. In simple words, ML is a type of
+                            artificial intelligence that extract patterns out of raw data by using an algorithm or
+                            method.
+                        </font>
+                    </p>
+                </div>
+                </h2>
+                </h2>
+            </div>
+
         </div>
-        
+        <div class="card">
+            <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
+                <div>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/hjh1ikznScg">
+                    </iframe>
+                </div>
+                <div style="">
+                    <p style="margin-left:5px;">
+                        <font style="font-size: large; font-family:Tahoma; ">
+                            Audience: <br> he reader must have basic knowledge of
+                            artificial intelligence. He/she should also be aware of Python, NumPy, Scikit-learn, Scipy,
+                            Matplotlib. If you are new to any of these
+                            concepts, we recommend you to take up tutorials
+                            concerning these topics, before you dig further into this tutoria
+                        </font>
+                    </p>
+                </div>
+                </h2>
+                </h2>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-header" style="display: flex; flex-direction: row;" id="headingThree">
+                <div>
+                    <iframe width="400" height="250" src="https://www.youtube.com/embed/4dwsSz_fNSQ">
+                    </iframe>
+                </div>
+                <div style="">
+                    <p style="margin-left:5px;">
+                        <font style="font-size: large; font-family:Tahoma; ">
+                            Machine Learning with Python Tutorial: <br>Machine Learning (ML) is basically that field of
+                            computer
+                            science with the help of which computer systems can provide sense to data in much the same
+                            way as human
+                            beings do. In simple words, ML is a type of
+                            artificial intelligence that extract patterns out of raw data by using an algorithm or
+                            method.
+                        </font>
+                    </p>
+                </div>
+                </h2>
+                </h2>
+            </div>
+
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 
-  
 
-    
+
+
 
     <!-- other courses -->
     <div class="container">
@@ -373,7 +447,7 @@
         </div>
         <!-- footer -->
         <br>
-        <div >
+        <div>
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
                 <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
@@ -394,7 +468,8 @@
 
 
 
-
+        <!-- linking javscript -->
+        <script src="static/searchbar.js"></script>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

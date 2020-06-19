@@ -135,11 +135,14 @@
         }
     </style>
 
+    <link rel="stylesheet" type="text/css" href="static/overview.css">
+
     <title>OverView</title>
 </head>
 
 <body>
 
+    <!-- navbar -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -154,19 +157,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <button class="button button4"><a class="nav-link" href="#">Home <span
-                                class="sr-only">(current)</span></a></button>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 
                 </li>
                 <li class="nav-item mx-1">
-                    <button class="button button4"><a class="nav-link" href="#">Link</a></button>
+                    <a class="nav-link" href="#">Link</a>
                 </li>
 
                 <li class="nav-item mx-1">
-                    <button class="button button4"><a class="nav-link" href="#">Contact us</a></button>
+                    <a class="nav-link" href="#">Contact us</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <button class="button button4"><a class="nav-link" href="#">About</a></button>
+                    <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -182,26 +184,39 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input id="searchbar" class="form-control mr-sm-2" type="search" onkeyup="search_animal()"
+                    placeholder="Search" aria-label="Search" autocomplete="off">
+                <br>
+                <div class="results">
+                    <!-- ordered list -->
+                    <ul style="list-style: none;">
+                        <li class="animals"><a href="overview.html">machine learning</a></li>
+                        <li class="animals"><a href="android_ov.html">android</a></li>
+                        <li class="animals"><a href="#">kotlin</a></li>
+                        <li class="animals"><a href="#">flutter</a></li>
+                        <li class="animals"><a href="#">java</a></li>
+                        <li class="animals"><a href="#">javaScript</a></li>
+                        <li class="animals"><a href="#">python</a></li>
+                        <li class="animals"><a href="#">artificial intelligence</a></li>
+                        <li class="animals"><a href="ethical_1.html">ethical hacking</a></li>
+                        <li class="animals"><a href="#">c</a></li>
+                        <li class="animals"><a href="webd.html">web developements</a></li>
+                    </ul>
+                </div>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="login" class="btn btn-outline-primary my-2 my-sm-0 mx-1" type="button"
+                    onclick="changeimg(this)">Login</button>
+
             </form>
         </div>
     </nav>
 
-    <!-- alert -->
-    <!-- <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <strong>Enroll in this course to get closer to your sucess and stay safe at home </strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div> -->
 
-    <!-- starting image -->
     <div id="my-carousel" class="carousel slide my-2" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    class="d-block w-100" alt="head_img" width="1400" height="500">
+                <img src="https://images.squarespace-cdn.com/content/v1/53528f90e4b0768cad09d33b/1541186576265-RWK67UCDI04WXSJR5GQO/ke17ZwdGBToddI8pDm48kLHJ70-JWA9dgEOAbI336f17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0p4XabXLlNWpcJMv7FrN_NK7gC7ng9OtoO5ep7zCz0n67pPMXhJpSCNtoO-H2bRokQ/Artificial_intelligence.jpeg?format=1500w"
+                    class="d-block w-100" alt="head_img" width="1300" height="500">
                 <div class="carousel-caption ">
                     <h1 class="banner-text-size"
                         style="font-size:40px;text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;">
@@ -211,81 +226,136 @@
         </div>
     </div>
 
-    <!-- jumbotron (removed for creating resource page)-->
-    
-    <!-- <div class="container col-md-3 col-sm-0"></div> -->
-
-
-
-    <!-- course content -->
-    <div class="container col-md-8" style="padding: 70px 0;">
+    <!-- Header -->
+    <div class="container col-md-12 col-lg-12" style="padding: 70px 0;">
         <br>
-        <h3 style=" color: rgb(19, 175, 175);" align="center">Introduction</h3>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Resources</h3>
         <hr>
         <!-- collapse -->
-        <div class="accordion " id="accordionExample">
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                        <button class="btn btn-success" class="col-md-3" style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
-                        <button class="btn btn-warning" class="col-md-3" style="margin-bottom:5px; position: relative;" >Submit Assignment</button>
-                </h2>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="headingThree">
+        <div class="accordion " id="accordionExample" style="display:flex; ">
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingTwo">
                     <h2 class="mb-0">
-                      <h2 class="mb-0">
-                        <button class="btn btn-success" class="col-md-3" style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
-                        <button class="btn btn-warning" class="col-md-3" style="margin-bottom:5px; position: relative;" >Submit Assignment</button>
-                    </h2>
+                        <a href="book_pdf.html" style="text-decoration: none;">Download Book</a>
                     </h2>
                 </div>
-                
             </div>
-            <div class="card">
-                <div class="card-header" id="headingFour">
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingThree">
                     <h2 class="mb-0">
-                      <h2 class="mb-0">
-                        <button class="btn btn-success" class="col-md-3" style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
-                        <button class="btn btn-warning" class="col-md-3" style="margin-bottom:5px; position: relative;" >Submit Assignment</button>
+                        <h2 class="mb-0">
+                            <a href="video_lectures.html" style="text-decoration: none;">video lectures</a>
+                        </h2>
+                    </h2>
+                </div>
 
-                    </h2>
+            </div>
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFour">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <a href="notes.html" style="text-decoration: none;">Download Notes</a>
+                        </h2>
                     </h2>
                 </div>
                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                   
+
                 </div>
             </div>
-            <div class="card">
-                <div class="card-header" id="headingFive">
+            <div class="card col-md-3 col-lg-3 col-sm-3">
+                <div class="card-header" style="text-align: center;" id="headingFive">
                     <h2 class="mb-0">
-                      <h2 class="mb-0">
-                        <button class="btn btn-success" class="col-md-3" style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
-                        <button class="btn btn-warning" class="col-md-3" style="margin-bottom:5px; position: relative;" >Submit Assignment</button>
-                    </h2>
+                        <h2 class="mb-0">
+                            <a href="assignment.html" style="text-decoration: none;">Assignment</a>
+                        </h2>
                     </h2>
                 </div>
                 <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                   
+
                 </div>
             </div>
 
         </div>
     </div>
 
-  
 
-    
+    <!-- course content -->
+    <div class="container col-md-8" style="padding: 70px 0;">
+        <br>
+        <h3 style=" color: rgb(19, 175, 175);" align="center">Assignment</h3>
+        <hr>
+        <!-- collapse -->
+        <div class="accordion " id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-success" class="col-md-3"
+                            style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                        <button class="btn btn-warning" class="col-md-3"
+                            style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                    </h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                        </h2>
+                    </h2>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <h2 class="mb-0">
+                            <button class="btn btn-success" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Download Assignment-1</button>
+                            <button class="btn btn-warning" class="col-md-3"
+                                style="margin-bottom:5px; position: relative;">Submit Assignment</button>
+                        </h2>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
 
     <!-- other courses -->
     <div class="container">
         <h3 style=" color: rgb(19, 175, 175);"></h3>
         <hr>
-        
+
         <!-- footer -->
         <br>
-        <div >
+        <div>
             <footer class="container">
                 <p class="float-right"><a href="#">Back to top</a></p>
                 <p>© 2020-2021 BrainEvolve, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a>
@@ -305,7 +375,8 @@
         </div>
 
 
-
+        <!-- linking javscript -->
+        <script src="static/searchbar.js"></script>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
